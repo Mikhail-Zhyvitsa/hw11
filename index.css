@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  background-color: rgb(240, 202, 238);
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  min-height: 130px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 5px;
+  list-style-type: none;
+}
+
+.container {
+  justify-content: center;
+  width: 100%;
+}
+
+.button {
+  font-size: 20px;
+  color: rgb(53, 51, 51);
+  border: none;
+  background-color: rgb(143, 240, 172);
+  padding: 10px 15px;
+  border-radius: 22px;
+  transition-property: background-color, transform;
+  transition-duration: 200ms;
+}
+
+.button:hover {
+  background-color: rgb(93, 163, 65);
+  transform: scale(1.2, 1.5);
+}
+
+.News {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  gap: 20px;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+.item {
+  display: flex;
+  background-color: rgb(76, 1, 146);
+  height: 200px;
+  width: 200px;
+  justify-content: center;
+  align-items: center;
+  color: aliceblue;
+  transition-property: transform;
+  transition-duration: 800ms;
+}
+
+.item:hover {
+  transform: rotate(180deg);
+}
+
+.main {
+  display: flex;
+  width: 100%;
+  min-height: 700px;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(240, 202, 238);
+}
+
+@keyframes animation {
+  0% {
+    background-color: rgb(6, 6, 114);
+    right: 1205px;
+    top: 580px;
+  }
+
+  10% {
+    background-color: rgb(72, 6, 133);
+    right: 1015px;
+    top: 420px;
+  }
+
+  20% {
+    background-color: rgb(5, 112, 77);
+    right: 825px;
+    top: 580px;
+  }
+
+  30% {
+    background-color: rgb(181, 240, 115);
+    right: 780px;
+    top: 420px;
+  }
+
+  40% {
+    background-color: rgb(80, 17, 6);
+    right: 700px;
+    top: 580px;
+  }
+
+  50% {
+    background-color: rgb(18, 2, 32);
+    right: 600px;
+    top: 420px;
+  }
+
+  60% {
+    background-color: rgb(255, 0, 0);
+    right: 510px;
+    top: 580px;
+  }
+
+  70% {
+    background-color: rgb(3, 205, 255);
+    right: 400px;
+    top: 420px;
+  }
+
+  80% {
+    background-color: rgb(0, 255, 191);
+    right: 330px;
+    top: 580px;
+  }
+
+  90% {
+    background-color: rgb(41, 63, 0);
+    right: 170px;
+    top: 420px;
+  }
+
+  100% {
+    background-color: rgb(255, 208, 0);
+    right: 60px;
+    top: 580px;
+  }
+}
+
+.circle-item {
+  position: relative;
+  right: 1205px;
+  top: 580px;
+  background-color: bisque;
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+  animation-name: animation;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.circle-item:hover {
+  animation-play-state: paused;
+}
